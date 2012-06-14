@@ -23178,3 +23178,17 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
 
 
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/api/v1/messages.json" for 127.0.0.1 at 2012-06-13 22:22:37 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"message"=>{}}
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" IN (3, 2, 1)[0m
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/messages.json" for 127.0.0.1 at 2012-06-13 22:22:38 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"message"=>{}}
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" IN (3, 2, 1)
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.3ms)

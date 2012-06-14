@@ -18,4 +18,20 @@ class Api::V1::MessagesController < ApplicationController
       render :json => {:error => "Message not found"}, :status => :not_acceptable
     end
   end
+
+  def create
+    body = JSON.parse(params[:body])
+    message = Message.new(:content => body["content"],
+                          :room_id => body["room_id"],
+                          :author_id => body["author_id"],
+                          :provider => body["provider"],
+                          :branch => body["branch"] )
+
+    if message.save
+      respond_with message, :status => :created,
+                            :location => api_v1_room_path(message.room_id)
+    else
+      render :json => {errors: [message.errors]}, :status => :not_acceptable
+    end
+  end
 end
