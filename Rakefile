@@ -5,3 +5,10 @@
 require File.expand_path('../config/application', __FILE__)
 
 OctochatSearchService::Application.load_tasks
+
+task :regenerate do
+  Rails.env = "development"
+  Rake::Task["db:drop"].invoke
+  Rails.env = "test"
+  Rake::Task["db:drop"].invoke
+end
