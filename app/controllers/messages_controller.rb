@@ -20,19 +20,6 @@ class MessagesController < ApplicationController
     end
   end
 
-  def edit
-    @message = Message.find(params[:id])
-  end
-
-  def update
-    @message = Message.find(params[:id])
-    if @message.update_attributes(params[:message])
-      redirect_to @message, :notice  => "Successfully updated message."
-    else
-      render :action => 'edit'
-    end
-  end
-
   def destroy
     @message = Message.find(params[:id])
     @message.destroy

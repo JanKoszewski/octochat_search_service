@@ -3,7 +3,7 @@ class Api::V1::MessagesController < ApplicationController
 
   def index
     @messages = Message.search(params)
-    if @messages
+    if @messages.results.size > 0
       render :json => { :messages => @messages.results }
     else
       render :json => {:error => "Messages not found"}, :status => :not_acceptable
