@@ -5,12 +5,23 @@ class Message < ActiveRecord::Base
 
   include Tire::Model::Search
   include Tire::Model::Callbacks
+      
 
   def self.search(params)
     tire.search(load: true) do |s|
       s.query { string params[:query], default_operator: "AND" } if params[:query].present?
-      s.filter :range, created_at: {lte: Time.zone.now}
       s.sort { by :created_at, "desc" } if params[:query].blank?
     end
   end
+
+  # def self.search(params)
+  #   tire.search(load: true) do |s|
+  #     s.query { string params[:query], default_operator: "AND" } if params[:query].present?
+  #     s.filter :terms, :author_id => params[:author] if params[:author].present?
+  #     s.filter :terms, :room_id => params[:room] if params[:room].present?
+  #     s.filter :terms, :branch => params[:branch] if params[:branch].present?
+  #     s.sort { by :created_at, "desc" } if params[:query].blank?
+  #   end
+  # end
+  
 end
