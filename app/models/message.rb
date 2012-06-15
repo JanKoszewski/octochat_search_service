@@ -14,6 +14,21 @@ class Message < ActiveRecord::Base
     end
   end
 
+  def self.test_search(params)
+    tire.search(load: true) do
+      query do
+        string params[:query], default_operator: "AND"
+        # filtered do
+        # filtered do
+        #   query { string params[:query], default_operator: "AND" } if params[:query].present?
+        #   filter :or, { :terms => { :author_id => params[:author] },
+        #               { :terms => { :room_id => params[:room] },
+        #               { :terms => { :branch => params[:branch] }
+        # end
+      end
+    end
+  end
+
   # def self.search(params)
   #   tire.search(load: true) do |s|
   #     s.query { string params[:query], default_operator: "AND" } if params[:query].present?

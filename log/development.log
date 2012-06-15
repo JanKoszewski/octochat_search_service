@@ -25124,3 +25124,216 @@ RuntimeError ({"token"=>nil, "query"=>"oh hi", "author"=>"1234", "room"=>nil, "b
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (26.2ms)
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.2ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:34:59 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `filtered' for #<Tire::Search::Search:0x007fecc2d2d0c8>):
+  app/models/message.rb:19:in `block in test_search'
+  app/models/message.rb:18:in `test_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:36:14 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 12ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[iBA900SwTtW9Oy6HtFye4w][messages][1]: SearchParseException[[messages][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"filtered\":{\"query\":{\"query_string\":{\"query\":\"hi\",\"default_operator\":\"AND\"}}}}}]]]; nested: QueryParsingException[[messages] [filtered] requires 'filter' element]; }{[iBA900SwTtW9Oy6HtFye4w][messages][3]: SearchParseException[[messages][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"filtered\":{\"query\":{\"query_string\":{\"query\":\"hi\",\"default_operator\":\"AND\"}}}}}]]]; nested: QueryParsingException[[messages] [filtered] requires 'filter' element]; }]","status":500}):
+  app/models/message.rb:18:in `test_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:36:38 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:25: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:36:58 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:25: syntax error, unexpected keyword_end, expecting '}'
+          end
+             ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:37:42 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `query' for #<Tire::Search::Query:0x007fecc580d2e8 @value={}>):
+  app/models/message.rb:20:in `block (2 levels) in test_search'
+  app/models/message.rb:19:in `block in test_search'
+  app/models/message.rb:18:in `test_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:38:59 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `query' for #<Tire::Search::Query:0x007fecc383e020 @value={}>):
+  app/models/message.rb:20:in `block (2 levels) in test_search'
+  app/models/message.rb:19:in `block in test_search'
+  app/models/message.rb:18:in `test_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:39:32 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" IN (1, 3)[0m
+Completed 200 OK in 62ms (Views: 2.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:40:41 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:27: syntax error, unexpected keyword_end, expecting '}'
+          end
+             ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:40:54 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:27: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:41:13 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:27: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:41:49 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" IN (1, 3)
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:43:14 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:28: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:43:35 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:27: syntax error, unexpected keyword_end, expecting '}'
+        end
+           ^):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:44:52 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 11ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[iBA900SwTtW9Oy6HtFye4w][messages][4]: SearchParseException[[messages][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"filtered\":{\"query\":{\"query_string\":{\"query\":\"hi\",\"default_operator\":\"AND\"}}}}}]]]; nested: QueryParsingException[[messages] [filtered] requires 'filter' element]; }{[iBA900SwTtW9Oy6HtFye4w][messages][0]: SearchParseException[[messages][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"filtered\":{\"query\":{\"query_string\":{\"query\":\"hi\",\"default_operator\":\"AND\"}}}}}]]]; nested: QueryParsingException[[messages] [filtered] requires 'filter' element]; }{[iBA900SwTtW9Oy6HtFye4w][messages][1]: SearchParseException[[messages][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"filtered\":{\"query\":{\"query_string\":{\"query\":\"hi\",\"default_operator\":\"AND\"}}}}}]]]; nested: QueryParsingException[[messages] [filtered] requires 'filter' element]; }]","status":500}):
+  app/models/message.rb:18:in `test_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:45:05 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `query' for #<Tire::Search::Query:0x007fecc5c91be8 @value={}>):
+  app/models/message.rb:21:in `block (2 levels) in test_search'
+  app/models/message.rb:19:in `block in test_search'
+  app/models/message.rb:18:in `test_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author&room&branch" for 127.0.0.1 at 2012-06-15 13:45:16 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:42: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/api/v1/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
