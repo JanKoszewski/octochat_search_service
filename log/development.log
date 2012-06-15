@@ -25337,3 +25337,2720 @@ SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octoch
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
   Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=hi&author_id=1235" for 127.0.0.1 at 2012-06-15 15:04:12 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"hi", "author_id"=>"1235"}
+  [1m[36mMessage Load (0.6ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" IN (1, 3)[0m
+  Rendered messages/index.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 180ms (Views: 52.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:04:13 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2012-06-15 15:04:29 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" IN (5, 4, 3, 2, 1)
+  Rendered messages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 57ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:04:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=chattin&author&room&branch" for 127.0.0.1 at 2012-06-15 15:06:32 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"chattin", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/messages.json?token&query=chattin&author&room&branch" for 127.0.0.1 at 2012-06-15 15:09:56 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"chattin", "author"=>nil, "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 12ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[_all:chattin],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"chattin\",\"default_operator\":\"AND\"}},\"filter\":{\"terms\":{\"author_id\":null}}}]]]; nested: QueryParsingException[[messages] bool filter requires a field name, followed by array of terms]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: query[_all:chattin],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"chattin\",\"default_operator\":\"AND\"}},\"filter\":{\"terms\":{\"author_id\":null}}}]]]; nested: QueryParsingException[[messages] bool filter requires a field name, followed by array of terms]; }]","status":500}):
+  app/models/message.rb:33:in `interesting_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/api/v1/messages.json?token&query=chattin&author=1234&room&branch" for 127.0.0.1 at 2012-06-15 15:10:09 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"chattin", "author"=>"1234", "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 7ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][0]: SearchParseException[[messages][0]: query[_all:chattin],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"chattin\",\"default_operator\":\"AND\"}},\"filter\":{\"terms\":{\"author_id\":\"1234\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][2]: SearchParseException[[messages][2]: query[_all:chattin],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"chattin\",\"default_operator\":\"AND\"}},\"filter\":{\"terms\":{\"author_id\":\"1234\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: query[_all:chattin],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"chattin\",\"default_operator\":\"AND\"}},\"filter\":{\"terms\":{\"author_id\":\"1234\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[_all:chattin],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"chattin\",\"default_operator\":\"AND\"}},\"filter\":{\"terms\":{\"author_id\":\"1234\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }]","status":500}):
+  app/models/message.rb:33:in `interesting_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2012-06-15 15:14:52 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" IN (5, 4, 3, 2, 1)
+  Rendered messages/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:14:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:14:59 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:14:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:15:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2012-06-15 15:15:27 -0400
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."id" IN (5, 4, 3, 2, 1)
+  Rendered messages/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:15:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:15:29 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:15:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:15:31 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:15:31 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:15:52 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+Completed 500 Internal Server Error in 7ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: query[content:omg],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:omg\"}},\"filter\":{\"terms\":{\"author_id\":1}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:omg],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:omg\"}},\"filter\":{\"terms\":{\"author_id\":1}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }]","status":500}):
+  app/models/message.rb:40:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:15:52 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:16:08 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:16:08 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:16:11 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:16:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:16:11 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:16:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:16:18 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:50: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:16:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:16:22 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (26.6ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `strftime' for "2012-06-14T19:41:24Z":String):
+    13:   <div class="info">
+    14:     Author: <%= message.author_id %>
+    15:     Provider: <%= message.provider %>
+    16:     Created At: <%= message.created_at.strftime('%b %d, %Y') %>
+    17:   </div>
+    18:   <div class="content"><%= message.content %></div>
+    19: <% end %>
+  app/views/messages/index.html.erb:16:in `block in _app_views_messages_index_html_erb___3009773374156018786_70312003762820'
+  app/views/messages/index.html.erb:9:in `_app_views_messages_index_html_erb___3009773374156018786_70312003762820'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:16:22 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:17:10 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+Completed 500 Internal Server Error in 3ms
+
+RuntimeError (#<Tire::Results::Collection:0x007fe591847be0 @response={"took"=>1, "timed_out"=>false, "_shards"=>{"total"=>5, "successful"=>5, "failed"=>0}, "hits"=>{"total"=>1, "max_score"=>0.19178301, "hits"=>[{"_index"=>"messages", "_type"=>"message", "_id"=>"5", "_score"=>0.19178301, "_source"=>{"actual_created_at"=>nil, "author_id"=>"43c721e", "branch"=>"master", "content"=>"nothing doing", "created_at"=>"2012-06-14T19:41:24Z", "foo_text"=>nil, "provider"=>"octochat", "room_id"=>5, "updated_at"=>"2012-06-14T19:41:24Z"}}]}}, @options={}, @time=1, @total=1, @facets=nil, @wrapper=Tire::Results::Item>):
+  app/models/message.rb:40:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:17:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:17:27 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+Completed 500 Internal Server Error in 6ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:nothing],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:nothing\"}},\"filter\":{\"terms\":{\"author_id\":1}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][1]: SearchParseException[[messages][1]: query[content:nothing],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:nothing\"}},\"filter\":{\"terms\":{\"author_id\":1}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][2]: SearchParseException[[messages][2]: query[content:nothing],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:nothing\"}},\"filter\":{\"terms\":{\"author_id\":1}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][0]: SearchParseException[[messages][0]: query[content:nothing],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:nothing\"}},\"filter\":{\"terms\":{\"author_id\":1}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }]","status":500}):
+  app/models/message.rb:40:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:17:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:18:17 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:38: syntax error, unexpected ',', expecting '}'
+      filter { :terms, :author_id => 1 }
+                      ^):
+  app/controllers/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:18:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:20:09 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:38: syntax error, unexpected ':', expecting '}'
+      filter { :terms :author_id => "1" }
+                       ^):
+  app/controllers/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:20:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:20:30 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:38: syntax error, unexpected ',', expecting '}'
+      filter { :terms, :author_id => "1" }
+                      ^):
+  app/controllers/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:20:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:20:43 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+Completed 500 Internal Server Error in 7ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:nothing],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:nothing\"}},\"filter\":{\"terms\":{\"author_id\":\"1\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: query[content:nothing],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:nothing\"}},\"filter\":{\"terms\":{\"author_id\":\"1\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }]","status":500}):
+  app/models/message.rb:40:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:20:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:25:18 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError (Tire::Search::Search):
+  app/models/message.rb:40:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:25:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:28:32 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `strftime' for "2012-06-14T19:41:21Z":String):
+    13:   <div class="info">
+    14:     Author: <%= message.author_id %>
+    15:     Provider: <%= message.provider %>
+    16:     Created At: <%= message.created_at.strftime('%b %d, %Y') %>
+    17:   </div>
+    18:   <div class="content"><%= message.content %></div>
+    19: <% end %>
+  app/views/messages/index.html.erb:16:in `block in _app_views_messages_index_html_erb___3009773374156018786_70312003762820'
+  app/views/messages/index.html.erb:9:in `_app_views_messages_index_html_erb___3009773374156018786_70312003762820'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:28:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:28:49 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `strftime' for "2012-06-14T19:41:21Z":String):
+    13:   <div class="info">
+    14:     Author: <%= message.author_id %>
+    15:     Provider: <%= message.provider %>
+    16: <!--    Created At: <%= message.created_at.strftime('%b %d, %Y') %> -->
+    17:   </div>
+    18:   <div class="content"><%= message.content %></div>
+    19: <% end %>
+  app/views/messages/index.html.erb:16:in `block in _app_views_messages_index_html_erb___3009773374156018786_70311997948400'
+  app/views/messages/index.html.erb:9:in `_app_views_messages_index_html_erb___3009773374156018786_70311997948400'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:28:49 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:28:54 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+  Rendered messages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:28:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=nothing" for 127.0.0.1 at 2012-06-15 15:29:24 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"nothing"}
+Completed 500 Internal Server Error in 7ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>\\\"1234\\\"}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>\"1234\"}]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>\\\"1234\\\"}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>\"1234\"}]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][1]: SearchParseException[[messages][1]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>\\\"1234\\\"}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>\"1234\"}]]; }]","status":500}):
+  app/models/message.rb:42:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:29:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:29:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:29:27 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 4ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][0]: SearchParseException[[messages][0]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>\\\"1234\\\"}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>\"1234\"}]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>\\\"1234\\\"}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>\"1234\"}]]; }]","status":500}):
+  app/models/message.rb:42:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:29:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:29:51 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 4ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][0]: SearchParseException[[messages][0]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>1234}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>1234}]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"filter\":{\"{:author_id=>1234}\":{}}}]]]; nested: QueryParsingException[[messages] No filter registered for [{:author_id=>1234}]]; }]","status":500}):
+  app/models/message.rb:42:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:29:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:30:19 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for #<Tire::Search::Search:0x007fe59342d620>):
+    6: <% end %>
+    7: 
+    8: <div id="messages">
+    9: <% @messages.each do |message| %>
+    10:   <h2>
+    11:     <%= link_to message.provider, message %>
+    12:   </h2>
+  app/views/messages/index.html.erb:9:in `_app_views_messages_index_html_erb___3009773374156018786_70312006683340'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:30:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:54:40 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 20ms
+
+RuntimeError (#<Tire::Results::Collection:0x007fe59239cfb8 @response={"took"=>17, "timed_out"=>false, "_shards"=>{"total"=>5, "successful"=>5, "failed"=>0}, "hits"=>{"total"=>5, "max_score"=>1.0, "hits"=>[{"_index"=>"messages", "_type"=>"message", "_id"=>"4", "_score"=>1.0, "_source"=>{"actual_created_at"=>nil, "author_id"=>"43c721e", "branch"=>"master", "content"=>"chattin'", "created_at"=>"2012-06-14T19:41:21Z", "foo_text"=>nil, "provider"=>"octochat", "room_id"=>5, "updated_at"=>"2012-06-14T19:41:21Z"}}, {"_index"=>"messages", "_type"=>"message", "_id"=>"5", "_score"=>1.0, "_source"=>{"actual_created_at"=>nil, "author_id"=>"43c721e", "branch"=>"master", "content"=>"nothing doing", "created_at"=>"2012-06-14T19:41:24Z", "foo_text"=>nil, "provider"=>"octochat", "room_id"=>5, "updated_at"=>"2012-06-14T19:41:24Z"}}, {"_index"=>"messages", "_type"=>"message", "_id"=>"1", "_score"=>1.0, "_source"=>{"actual_created_at"=>nil, "author_id"=>"1234", "branch"=>nil, "content"=>"oh hi!", "created_at"=>"2012-06-14T13:54:01Z", "foo_text"=>nil, "provider"=>"github", "room_id"=>nil, "updated_at"=>"2012-06-14T13:54:01Z"}}, {"_index"=>"messages", "_type"=>"message", "_id"=>"2", "_score"=>1.0, "_source"=>{"actual_created_at"=>nil, "author_id"=>"43c721e", "branch"=>"master", "content"=>"hello!", "created_at"=>"2012-06-14T19:00:03Z", "foo_text"=>nil, "provider"=>"octochat", "room_id"=>5, "updated_at"=>"2012-06-14T19:00:03Z"}}, {"_index"=>"messages", "_type"=>"message", "_id"=>"3", "_score"=>1.0, "_source"=>{"actual_created_at"=>nil, "author_id"=>"43c721e", "branch"=>"master", "content"=>"oh hi", "created_at"=>"2012-06-14T19:41:19Z", "foo_text"=>nil, "provider"=>"octochat", "room_id"=>5, "updated_at"=>"2012-06-14T19:41:19Z"}}]}, "facets"=>{"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}}, @options={}, @time=17, @total=5, @facets={"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}, @wrapper=Tire::Results::Item>):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:54:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:55:49 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 5ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"facets\":{\"author\":{\"terms\":{\"field\":\"author_id\",\"size\":10,\"all_terms\":false}}},\"filter\":{\"terms\":{\"author_id\":\"1\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: query[content:*],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:*\"}},\"facets\":{\"author\":{\"terms\":{\"field\":\"author_id\",\"size\":10,\"all_terms\":false}}},\"filter\":{\"terms\":{\"author_id\":\"1\"}}}]]]; nested: QueryParsingException[[messages] [terms] filter does not support [author_id]]; }]","status":500}):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:55:49 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:56:27 -0400
+
+SyntaxError (/Users/jankoszewski/Dropbox/hungry academy/projects/octochat/octochat-search-service/app/models/message.rb:43: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+        terms, :author_id => "1"
+                            ^):
+  app/controllers/messages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:56:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:57:00 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 4ms
+
+RuntimeError (#<Tire::Results::Collection:0x007fe5941e4980 @response={"took"=>1, "timed_out"=>false, "_shards"=>{"total"=>5, "successful"=>5, "failed"=>0}, "hits"=>{"total"=>0, "max_score"=>nil, "hits"=>[]}, "facets"=>{"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}}, @options={}, @time=1, @total=0, @facets={"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}, @wrapper=Tire::Results::Item>):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:57:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 15:57:20 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError (#<Tire::Search::Search:0x007fe596136ce8 @indices=["messages"], @types=[], @options={}, @path="/messages/_search", @query=#<Tire::Search::Query:0x007fe596136680 @value={:query_string=>{:query=>"content:*"}}>, @filters=[{:terms=>{:author_id=>["1"]}}], @facets={"author"=>{:terms=>{:field=>:author_id, :size=>10, :all_terms=>false}}}>):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 15:57:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 16:10:47 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 28ms
+
+RuntimeError (#<Tire::Results::Collection:0x007fe59342b8c0 @response={"took"=>5, "timed_out"=>false, "_shards"=>{"total"=>5, "successful"=>5, "failed"=>0}, "hits"=>{"total"=>0, "max_score"=>nil, "hits"=>[]}, "facets"=>{"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}}, @options={}, @time=5, @total=0, @facets={"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}, @wrapper=Tire::Results::Item>):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:10:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 16:11:06 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+Completed 500 Internal Server Error in 4ms
+
+RuntimeError (#<Tire::Results::Collection:0x007fe591811a68 @response={"took"=>1, "timed_out"=>false, "_shards"=>{"total"=>5, "successful"=>5, "failed"=>0}, "hits"=>{"total"=>1, "max_score"=>1.0, "hits"=>[{"_index"=>"messages", "_type"=>"message", "_id"=>"1", "_score"=>1.0, "_source"=>{"actual_created_at"=>nil, "author_id"=>"1234", "branch"=>nil, "content"=>"oh hi!", "created_at"=>"2012-06-14T13:54:01Z", "foo_text"=>nil, "provider"=>"github", "room_id"=>nil, "updated_at"=>"2012-06-14T13:54:01Z"}}]}, "facets"=>{"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}}, @options={}, @time=1, @total=1, @facets={"author"=>{"_type"=>"terms", "missing"=>0, "total"=>5, "other"=>0, "terms"=>[{"term"=>"43c721e", "count"=>4}, {"term"=>"1234", "count"=>1}]}}, @wrapper=Tire::Results::Item>):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:11:06 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=adfsdf" for 127.0.0.1 at 2012-06-15 16:11:32 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"adfsdf"}
+  Rendered messages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:11:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:11:43 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:11:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:11:50 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:11:50 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:11:59 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:11:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:01 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:01 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:01 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:02 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:35 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:35 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:36 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=" for 127.0.0.1 at 2012-06-15 16:12:39 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>""}
+Completed 500 Internal Server Error in 7ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][2]: SearchParseException[[messages][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"\"}},\"facets\":{\"author\":{\"terms\":{\"field\":\"author_id\",\"size\":10,\"all_terms\":false}}},\"filter\":{\"terms\":{\"author_id\":[\"1234\"]}}}]]]; nested: QueryParsingException[[messages] Failed to parse query []]; nested: ParseException[Cannot parse '': Encountered \"<EOF>\" at line 1, column 0.\nWas expecting one of:\n    <NOT> ...\n    \"+\" ...\n    \"-\" ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    <TERM> ...\n    \"*\" ...\n    ]; nested: ParseException[Encountered \"<EOF>\" at line 1, column 0.\nWas expecting one of:\n    <NOT> ...\n    \"+\" ...\n    \"-\" ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    <TERM> ...\n    \"*\" ...\n    ]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][1]: SearchParseException[[messages][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"\"}},\"facets\":{\"author\":{\"terms\":{\"field\":\"author_id\",\"size\":10,\"all_terms\":false}}},\"filter\":{\"terms\":{\"author_id\":[\"1234\"]}}}]]]; nested: QueryParsingException[[messages] Failed to parse query []]; nested: ParseException[Cannot parse '': Encountered \"<EOF>\" at line 1, column 0.\nWas expecting one of:\n    <NOT> ...\n    \"+\" ...\n    \"-\" ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    <TERM> ...\n    \"*\" ...\n    ]; nested: ParseException[Encountered \"<EOF>\" at line 1, column 0.\nWas expecting one of:\n    <NOT> ...\n    \"+\" ...\n    \"-\" ...\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    <TERM> ...\n    \"*\" ...\n    ]; }]","status":500}):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:53 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:12:55 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=" for 127.0.0.1 at 2012-06-15 16:12:57 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>""}
+Completed 500 Internal Server Error in 6ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:\"}},\"facets\":{\"author\":{\"terms\":{\"field\":\"author_id\",\"size\":10,\"all_terms\":false}}},\"filter\":{\"terms\":{\"author_id\":[\"1234\"]}}}]]]; nested: QueryParsingException[[messages] Failed to parse query [content:]]; nested: ParseException[Cannot parse 'content:': Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; nested: ParseException[Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][0]: SearchParseException[[messages][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:\"}},\"facets\":{\"author\":{\"terms\":{\"field\":\"author_id\",\"size\":10,\"all_terms\":false}}},\"filter\":{\"terms\":{\"author_id\":[\"1234\"]}}}]]]; nested: QueryParsingException[[messages] Failed to parse query [content:]]; nested: ParseException[Cannot parse 'content:': Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; nested: ParseException[Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; }]","status":500}):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:12:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:13:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:13:19 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:13:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh+hi" for 127.0.0.1 at 2012-06-15 16:13:20 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh hi"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:13:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh" for 127.0.0.1 at 2012-06-15 16:13:23 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh"}
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:13:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=tire" for 127.0.0.1 at 2012-06-15 16:13:28 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"tire"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:13:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=oh" for 127.0.0.1 at 2012-06-15 16:13:51 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"oh"}
+  Rendered messages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:13:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:14:04 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:14:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=" for 127.0.0.1 at 2012-06-15 16:14:15 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>""}
+Completed 500 Internal Server Error in 6ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][4]: SearchParseException[[messages][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:\"}},\"filter\":{\"terms\":{\"author_id\":[\"1234\"]}}}]]]; nested: QueryParsingException[[messages] Failed to parse query [content:]]; nested: ParseException[Cannot parse 'content:': Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; nested: ParseException[Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:\"}},\"filter\":{\"terms\":{\"author_id\":[\"1234\"]}}}]]]; nested: QueryParsingException[[messages] Failed to parse query [content:]]; nested: ParseException[Cannot parse 'content:': Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; nested: ParseException[Encountered \"<EOF>\" at line 1, column 8.\nWas expecting one of:\n    \"(\" ...\n    \"*\" ...\n    <QUOTED> ...\n    <TERM> ...\n    <PREFIXTERM> ...\n    <WILDTERM> ...\n    \"[\" ...\n    \"{\" ...\n    <NUMBER> ...\n    ]; }]","status":500}):
+  app/models/message.rb:45:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:14:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:14:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=chattin&author=1234&room&branch" for 127.0.0.1 at 2012-06-15 16:14:46 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"chattin", "author"=>"1234", "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 406 Not Acceptable in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room&branch" for 127.0.0.1 at 2012-06-15 16:14:53 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=chattin&author=1234&room&branch" for 127.0.0.1 at 2012-06-15 16:15:14 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"chattin", "author"=>"1234", "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 406 Not Acceptable in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room&branch" for 127.0.0.1 at 2012-06-15 16:15:32 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room&branch" for 127.0.0.1 at 2012-06-15 16:16:42 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>nil, "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 27ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][1]: SearchParseException[[messages][1]: query[content:hi],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:hi\"}},\"filter\":{\"and\":[{\"terms\":{\"author_id\":[\"1234\"]}},{\"terms\":{\"room_id\":[null]}},{\"terms\":{\"branch\":[null]}}]}}]]]; nested: NumberFormatException[For input string: \"null\"]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][3]: SearchParseException[[messages][3]: query[content:hi],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:hi\"}},\"filter\":{\"and\":[{\"terms\":{\"author_id\":[\"1234\"]}},{\"terms\":{\"room_id\":[null]}},{\"terms\":{\"branch\":[null]}}]}}]]]; nested: NumberFormatException[For input string: \"null\"]; }]","status":500}):
+  app/models/message.rb:47:in `interesting_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:17:07 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:17:07 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:17:09 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:17:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:17:14 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+Completed 500 Internal Server Error in 6ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][2]: SearchParseException[[messages][2]: query[content:ohasdfadsf],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:ohasdfadsf\"}},\"filter\":{\"and\":[{\"terms\":{\"author_id\":[null]}},{\"terms\":{\"room_id\":[null]}},{\"terms\":{\"branch\":[null]}}]}}]]]; nested: NumberFormatException[For input string: \"null\"]; }{[GZ02T2PrR6SevEOZpkjRPA][messages][0]: SearchParseException[[messages][0]: query[content:ohasdfadsf],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:ohasdfadsf\"}},\"filter\":{\"and\":[{\"terms\":{\"author_id\":[null]}},{\"terms\":{\"room_id\":[null]}},{\"terms\":{\"branch\":[null]}}]}}]]]; nested: NumberFormatException[For input string: \"null\"]; }]","status":500}):
+  app/models/message.rb:47:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:17:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:17:51 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:17:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:17:53 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:17:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:16 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:17 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:17 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:18 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:24 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:25 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+  Rendered messages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:26 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/messages?utf8=%E2%9C%93&query=ohasdfadsf" for 127.0.0.1 at 2012-06-15 16:18:34 -0400
+Processing by MessagesController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"ohasdfadsf"}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError (BOOM):
+  app/models/message.rb:42:in `block in interesting_search'
+  app/models/message.rb:33:in `interesting_search'
+  app/controllers/messages_controller.rb:3:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-06-15 16:18:34 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/jankoszewski/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room=foo&branch" for 127.0.0.1 at 2012-06-15 16:19:04 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>"foo", "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 500 Internal Server Error in 5ms
+
+Tire::Search::SearchRequestFailed (500 : {"error":"SearchPhaseExecutionException[Failed to execute phase [query], total failure; shardFailures {[GZ02T2PrR6SevEOZpkjRPA][messages][1]: SearchParseException[[messages][1]: query[content:hi],from[-1],size[-1]: Parse Failure [Failed to parse source [{\"query\":{\"query_string\":{\"query\":\"content:hi\"}},\"filter\":{\"and\":[{\"terms\":{\"author_id\":[\"1234\"]}},{\"terms\":{\"room_id\":[\"foo\"]}}]}}]]]; nested: NumberFormatException[For input string: \"foo\"]; }]","status":500}):
+  app/models/message.rb:48:in `interesting_search'
+  app/controllers/api/v1/messages_controller.rb:5:in `index'
+
+
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jankoszewski/.rvm/gems/ruby-1.9.3-p125@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room=1&branch" for 127.0.0.1 at 2012-06-15 16:19:33 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>"1", "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 406 Not Acceptable in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room=1&branch" for 127.0.0.1 at 2012-06-15 16:19:46 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>"1", "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 406 Not Acceptable in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=1234&room=5&branch" for 127.0.0.1 at 2012-06-15 16:20:10 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"1234", "room"=>"5", "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 406 Not Acceptable in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/messages.json?token&query=hi&author=43c721e&room=5&branch" for 127.0.0.1 at 2012-06-15 16:20:43 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  Parameters: {"token"=>nil, "query"=>"hi", "author"=>"43c721e", "room"=>"5", "branch"=>nil, "message"=>{"branch"=>nil}}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)

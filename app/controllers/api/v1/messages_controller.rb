@@ -2,7 +2,7 @@ class Api::V1::MessagesController < ApplicationController
   respond_to :json
 
   def index
-    @messages = Message.test_search(params)
+    @messages = Message.interesting_search(params)
     if @messages.results.size > 0
       render :json => { :messages => @messages.results }
     else
