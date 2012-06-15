@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120613003711) do
+ActiveRecord::Schema.define(:version => 20120614195037) do
 
   create_table "events", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -24,10 +24,8 @@ ActiveRecord::Schema.define(:version => 20120613003711) do
     t.string   "author_id"
     t.string   "provider"
     t.string   "branch"
-    t.datetime "actual_created_at"
-    t.string   "foo_text"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "rooms", :force => true do |t|
