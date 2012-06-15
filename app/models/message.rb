@@ -1,16 +1,22 @@
 class Message < ActiveRecord::Base
-  attr_accessible :content, :room_id, :author_id, :provider, :branch, :actual_created_at, :foo_text
+  attr_accessible :content, :room_id, :author_id, :provider, :branch
 
   belongs_to :user
 
   include Tire::Model::Search
   include Tire::Model::Callbacks
+      
 
   def self.search(params)
-    tire.search(load: true) do |s|
-      s.query { string params[:query], default_operator: "AND" } if params[:query].present?
-      s.filter :range, created_at: {lte: Time.zone.now}
-      s.sort { by :created_at, "desc" } if params[:query].blank?
+    s = Tire.search 'messages' do
+      query do
+        string "content:#{params[:query]}"
+      end
+
+      filter :terms, :author_id => [params[:author]] if params[:author]
+      filter :terms, :room_id => [params[:room]] if params[:room]
+      filter :terms, :branch => [params[:branch]] if params[:branch]
     end
+    s.results
   end
 end

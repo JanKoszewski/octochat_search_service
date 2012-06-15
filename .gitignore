@@ -20,3 +20,6 @@ coverage
 
 #Ignore all elasticsearch files
 elasticsearch*
+
+#Ignore all sphinx files
+sphinx*

@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    @messages = Message.search(params)
+    @messages = Message.interesting_search(params)
   end
 
   def show
